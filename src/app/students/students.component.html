@@ -1,10 +1,20 @@
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th></th>
-
-    </tr>
-  </thead>
+<table class="table caption-top">
+<caption>List of students</caption>
+<thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Age</th>
+    <th scope="col">Sex</th>
+  </tr>
+</thead>
+<tbody>
+  <tr class="text-capitalize" *ngFor="let studentsListObj of studentsList; let studentsListObjIndex = index">
+    <th scope="row">{{studentsListObjIndex}}</th>
+    <td>{{studentsListObj.name}}</td>
+    <td>{{studentsListObj.age}}</td>
+    <td>{{studentsListObj.sex}}</td>
+  </tr>
+ 
+</tbody>
 </table>

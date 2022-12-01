@@ -7,4 +7,18 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+
+  studentsList: Student[] = [
+    {
+      name : "Nagaraj",
+      age : 29,
+      sex : 'male'
+    },
+    {
+      name : "Suriya",
+      age : 29,
+      sex : 'male'
+    }
+  ];
+
 }
